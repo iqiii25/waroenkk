@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Galeri - Warung Madura Bu Yuyun</title>
+
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-image: url("images/madura (Large).jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        header {
+            background-color: #f01c1c;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #800000;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            position: relative;
+            z-index: 1;
+            transition: color 0.3s;
+            font-weight: bold;
+            color: white;
+            margin: 25px;
+        }
+
+        nav a::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background-color: #F01C1C;
+            transition: width 0.3s, height 0.3s, left 0.3s, top 0.3s;
+            z-index: -1;
+        }
+
+        nav a:hover {
+            color: #FFFFFF;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+        }
+
+        nav a.active {
+            font-size: 30px;
+            background-color: #F01C1C;
+        }
+
+        .isi {
+            padding: 20px;
+        }
+
+        h2 {
+            margin-top: 40px;
+            font-size: bold;
+        }
+
+        .timbul {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+        }
+
+        .foto {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .foto img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: grid;
+        }
+
+        .foto img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .foto:hover .item {
+            filter: blur(5px);
+            opacity: 0.5;
+            transform: scale(0.95);
+        }
+
+        .foto .item:hover {
+            filter: blur(0);
+            opacity: 1;
+            transform: scale(1.05);
+            z-index: 10;
+        }
+
+        .foto .item:hover img {
+            box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+        }
+
+        .teksgerak {
+            font-weight: bold;
+            position: relative;
+            animation: glitch 2s infinite;
+        }
+
+        footer {
+            background-color: #b30000;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Galeri Toko</h1>
+    <p>Dokumentasi Warung Madura Bu Yuyun</p>
+</header>
+
+<nav>
+    <a href="index.html">Beranda</a>
+    <a href="about.html">Tentang Kami</a>
+    <a href="faq.html">FAQ</a>
+    <a href="ketentuan.html" >Ketentuan </a>
+    <a href="menu.html">Produk</a>
+    <a href="foto.html" class="active">Images</a>
+    <a href="promo.html">Promo</a>
+    <a href="kontak.html">Kontak Lengkap</a>
+    <a href="testimoni.html">Testimoni</a>
+    <a href="kritik.html">Kritik & Saran</a>
+</nav>
+
+<div class="isi">
+
+    <h2 class="timbul">Galeri Umum</h2>
+    <div class="foto">
+        <div class="item">
+        <a href="!artikelPakPrabroro.html" class="active"><img src="images/prabowo2.png" alt="Pak Prabroro"></a>
+            <p><b>Pak Prabowo pernah beli disini</b></p>
+        </div>
+        <div class="item">
+            <a href="menu.html" class="active"><img src="images/depanmadura.jpg" alt="Depan toko"></a>
+            <p>Tampilan depan warung</p>
+        </div>
+        <div class="item">
+            <a href="menu.html" class="active"><img src="images/produkmadura.jpg" alt="Dalam toko"></a>
+            <p>Rak sembako lengkap dari beras, gula, sampai minyak goreng paling lezatt dan sedap</p>
+        </div>
+    </div>
+
+    <h2 class="timbul">Galeri Stok Barang</h2>
+    <div class="foto">
+        <div class="item">
+            <a href="menu.html" class="active"><img src="images/minumanmadura.jpg" alt="Stok minuman"></a>
+            <p>Stok minuman dingin</p>
+        </div>
+
+        <div class="item">
+            <a href="menu.html" class="active"><img src="images/galondangas.jpg" alt="Stok galon dan gas"></a>
+            <p>Stok galon dan gas</p>
+        </div>
+
+        <div class="item">
+            <a href="menu.html" class="active"><img src="images/sembakomadura.jpg" alt="Stok sembako"></a>
+            <p>Sembako lengkap</p>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2020 Warung Madura Bu Yuyun</p>
+</footer>
+
+</body>
+</html>

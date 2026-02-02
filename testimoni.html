@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Testimoni - Warung Madura Bu Yuyun</title>
+
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-image: url("images/madura (Large).jpg");
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            background-color: #f01c1c;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #800000;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            position: relative;
+            z-index: 1;
+            transition: color 0.3s;
+            font-weight: bold;
+            color: white;
+            margin: 25px;
+        }
+
+        nav a::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background-color: #F01C1C;
+            transition: width 0.3s, height 0.3s, left 0.3s, top 0.3s;
+            z-index: -1;
+        }
+
+        nav a:hover {
+            color: #FFFFFF;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+        }
+
+        nav a.active {
+            font-size: 30px;
+            background-color: #F01C1C;
+        }
+
+        .isi {
+            padding: 20px;
+        }
+
+        table {
+            margin: 80px auto;
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+        }
+
+        th {
+            background-color: #f01c1c;
+            color: white;
+        }
+
+        footer {
+            background-color: #b30000;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Testimoni Pelanggan</h1>
+    <p>Apa kata mereka tentang Warung Madura Bu Yuyun</p>
+</header>
+
+<nav>
+    <a href="index.html">Beranda</a>
+    <a href="about.html">Tentang Kami</a>
+    <a href="faq.html">FAQ</a>
+    <a href="ketentuan.html">Ketentuan</a>
+    <a href="menu.html">Produk</a>
+    <a href="foto.html">Images</a>
+    <a href="promo.html">Promo</a>
+    <a href="kontak.html">Kontak Lengkap</a>
+    <a href="testimoni.html" class="active">Testimoni</a>
+    <a href="kritik.html">Kritik & Saran</a>
+</nav>
+
+<div class="isi">
+
+    <table>
+        <tr>
+            <th>Nama</th>
+            <th>Testimoni</th>
+            <th>Rating</th>
+            <th>Tanggal</th>
+        </tr>
+        <tr>
+            <td>Dapakem, Warga Sekitar</td>
+            <td>Warungnya lengkap, buka 24 jam, sangat membantu.</td>
+            <td>⭐⭐⭐⭐⭐</td>
+            <td><small> 11 Juni 2021</small></td>
+        </tr>
+        <tr>
+            <td>Idoy, Tukang Make</td>
+            <td>Gabisa di jadikan tempat nongkrong.</td>
+            <td>⭐</td>
+            <td><small> 23 Agustus 2022</small></td>
+        </tr>
+        <tr>
+            <td>Ipan, Bapak Rumah Tangga</td>
+            <td>Sangat membantu, tapi pelayan nya kadang suka ngilang.</td>
+            <td>⭐⭐</td>
+            <td><small> 5 Januari 2024</small></td>
+        </tr>
+        <tr>
+            <td> Ojol Lewat</td>
+            <td>Enak jadi tempat beli snack kalo lagi nunggu orderan</td>
+            <td>⭐⭐⭐⭐⭐</td>
+            <td><small> 12 Juni 2024</small></td>
+        </tr>
+        <tr>
+            <td>Hasbi, Gengster Sekitar</td>
+            <td>Pelayan nya ga asik, warung nya ga boleh di jadiin basecamp</td>
+            <td>⭐</td>
+            <td><small> 19 Maret 2024</small></td>
+        </tr>
+        <tr>
+            <td>Arya, Bocah Nolep</td>
+            <td>Warung nya lengkap, gampang kalo mau beli buat stok gua main game</td>
+            <td>⭐⭐⭐⭐⭐</td>
+            <td><small> 1 Mei 2026</small></td>
+        </tr>
+        <tr>
+            <td>Candra, Pembeli China</td>
+            <td>Warung nya jelek, mending beli tempat saya</td>
+            <td>⭐</td>
+            <td><small> 15 Mei 2026</small></td>
+        </tr>
+    </table>
+
+</div>
+
+<footer>
+    <p>© 2020 Warung Madura Bu Yuyun</p>
+</footer>
+
+</body>
+</html>

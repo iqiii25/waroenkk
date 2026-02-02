@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Artikel Pak Prabroro</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #f01c1c;
+            color: white;
+            text-align: left;
+            padding-left: 70px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 70px;
+            font-family: lucida console, monospace;
+        }
+
+        nav {
+            background-color: #800000;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            position: relative;
+            z-index: 1;
+            transition: color 0.3s;
+            font-weight: bold;
+            color: white;
+            margin: 25px;
+        }
+
+        nav a::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background-color: #F01C1C;
+            transition: width 0.3s, height 0.3s, left 0.3s, top 0.3s;
+            z-index: -1;
+        }
+
+        nav a:hover {
+            color: #FFFFFF;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+        }
+
+        nav a.active {
+            font-size: 30px;
+            background-color: #F01C1C;
+        }
+
+        .isi {
+            padding: 50px;
+            margin: 70px;
+            margin-top: 15px;
+            margin-left: 150px;
+            margin-right: 50px;
+            background-color: #f4f4f4;
+        }
+
+        p {
+            font-size: 20px;
+            text-decoration: none;
+            font-family: 'Times New Roman', Times, serif;
+        }   
+
+        p a {
+            color: #1e90ff rgb(30,144,255);
+            text-decoration: none;
+        }
+
+        p a:hover {
+            text-decoration: underline;
+        }
+        
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 500px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+            
+        .di {
+            background: #989898;
+            color: #fff;
+            padding: 12px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .timbul {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+        }
+
+        footer {
+            background: red;
+            color: #fff;
+            padding: 12px;
+            font-weight: bold;
+            text-align: center;
+ 
+        }
+
+        .foto:hover {
+            transform: scale(1.3);
+        }
+
+        .konten {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        .artikel {
+            flex: 1;
+        }
+
+        .kotakinfo{
+            width: 260px;
+            background: #f8f9fa;
+            border: 1px solid #a2a9b1;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        .kotakinfo h3 {
+            text-align: center;
+            margin: 5px 0 10px;
+        }
+
+        .kotakinfo img {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        
+
+    </style>
+
+</head>
+<body>
+
+<header>
+    <h1> <font style="font-family: 'Bernard MT Condensed', sans-serif;"> BBC</font> <strong>News</strong> <font style="font-family: 'Bahnschrift SemiCondensed', sans-serif;">Indonesia</font></h1>
+</header>
+
+<nav>
+    <a href="foto.html">Balik Ke Warung Bu Yuyun</a>
+</nav>
+
+<div class="isi">
+    <div class="konten">
+        <div class="artikel">
+    <h2>PAK PRABOWO PERNAH KE WARUNG BU YUYUN? BENER GA SIH??</h2>
+
+        <p>Baru baru ini, media sosial dibuat heboh oleh sebuat kabar yang menarik</p>
+        <p>Seorang tokoh pemimpin Indonesia disebut sebut pernah mampir ke Warung Bu Yuyun, sebuah warung kecil di pinggir jalan yang lebih terkenal daripada prestasi nasional.</p>
+
+        <p>Cerita ini bermula dari seorang warga yang mengunggah foto di media sosial tentang kedatangan tokoh tersebut di Warung Bu Yuyun.</p>
+
+        <p>Tokoh tersebut berhenti dan turun dari kendaraan nya yang sederhana, ia membeli minuman dari Warung Bu Yuyun.</p>
+
+            <img src="images/prabowo.png">
+
+        <p>Bu Yuyun selaku pemilik warung awal nya tidak menyadari siapa pembelinya. Fokus nya pada saat itu hanya melayani pelanggannya.</p>
+
+        <p>"Saya kira dia hanya warga biasa. Pakaian nya yang sederhana, tidak terlihat seperti tokoh penting." Ucap Bu Yuyun.</p>
+
+        <p>Setelah transaksi selesai, barulah Bu Yuyun menyadari siapa pembeli nya sebenarnya setelah melihat berita di televisi.</p>
+
+        <p>"Saya kaget sekali. Ternyata dia <a href="https://id.wikipedia.org/wiki/Prabowo_Subianto">Pak Prabowo</a>. Saya merasa terhormat bisa melayani beliau." Ujar Bu Yuyun.</p>
+
+        <p>Kabar ini dengan cepat menyebar di media sosial, banyak netizen yang memberikan komentar positif tentang kesederhanaan tokoh tersebut. Dan setelah itu, Warung Bu Yuyun menjadi semakin ramai dan terkenal.  </p>
+        
+        </div>
+    
+    <aside class="kotakinfo">
+        <h3>Info Menarik</h3>
+        <img src="images/prawowo.jpg" alt="Prabowo Subianto">
+        <p>Prabowo Subianto Djojohadikusumo (EYD V: Prabowo Subianto Joyohadikusumo; lahir 17 Oktober 1951)</p>
+        <p>Adalah seorang politikus, pengusaha, dan mantan perwira militer Indonesia yang menjabat sebagai Presiden Indonesia kedelapan. Sebelumnya, ia adalah Menteri Pertahanan ke-26 di bawah Presiden <a href="https://id.wikipedia.org/wiki/Joko_Widodo">Joko Widodo</a> dari tahun 2019 hingga 2024.</p>
+        <p>Prabowo adalah presiden ketiga Indonesia yang memiliki latar belakang militer setelah <a href="https://id.wikipedia.org/wiki/Soeharto">Soeharto</a> dan <a href="https://id.wikipedia.org/wiki/Susilo_Bambang_Yudhoyono">Susilo Bambang Yudhoyono</a>, dan merupakan presiden tertua yang menjabat dalam sejarah Indonesia.</p>
+    </aside>    
+        
+    </div>        
+
+</div>
+
+<footer>
+    <p>INI HANYA PARODI / FIKSI. BUKAN BERITA ASLI. JANGAN DIANGGAP FAKTA.</p>
+</footer>
+
+</body>
+</html>

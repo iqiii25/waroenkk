@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>FAQ - Warung Madura Bu Yuyun</title>
+
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-image: url("images/madura (Large).jpg");
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #f01c1c;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #800000;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            position: relative;
+            z-index: 1;
+            transition: color 0.3s;
+            font-weight: bold;
+            color: white;
+            margin: 25px;
+        }
+
+        nav a::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background-color: #F01C1C;
+            transition: width 0.3s, height 0.3s, left 0.3s, top 0.3s;
+            z-index: -1;
+        }
+
+        nav a:hover {
+            color: #FFFFFF;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+        }
+
+        nav a.active {
+            font-size: 30px;
+            background-color: #F01C1C;
+        }
+
+        .timbul {
+            background-color: #bbbbbb;
+            color: black;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+        }
+        .isi {
+            padding: 20px;
+        }
+
+        details {
+            background-color: white;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        
+        details p,
+        h2 {
+            font-weight: bold;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px #888888;
+        }
+
+        h2 {
+            font-size: 35px;
+        }
+
+        summary:hover{
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #b30000;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>FAQ</h1>
+    <p>Pertanyaan yang sering ditanyakan</p>
+</header>
+
+<nav>
+    <a href="index.html">Beranda</a>
+    <a href="about.html">Tentang Kami</a>
+    <a href="faq.html" class="active">FAQ</a>
+    <a href="ketentuan.html">Ketentuan </a>
+    <a href="menu.html">Produk</a>
+    <a href="foto.html">Images</a>
+    <a href="promo.html">Promo</a>
+    <a href="kontak.html">Kontak Lengkap</a>
+    <a href="testimoni.html">Testimoni</a>
+    <a href="kritik.html">Kritik & Saran</a>
+</nav>
+
+<div class="isi">
+
+    <details>
+        <summary>Warung buka jam berapa?</summary>
+        <p>Warung Madura Bu Yuyun buka<strong> 24 jam nonstop</strong>.</p>
+    </details>
+
+    <details>
+        <summary>Warung nya pernah tutup ga?</summary>
+        <p>Warung Madura Bu Yuyun pernah tutup hanya saat ada keperluan yang sangat penting.</p>
+    </details>
+
+    <details>
+        <summary>Bisa bayar pakai QRIS?</summary>
+        <p>Warung Madura Bu Yuyun menerima pembayaran <strong>tunai dan QRIS</strong>.</p>
+    </details>
+
+    <details>
+        <summary>Promo nya ada pas kapan aja?</summary>
+        <p>Warung Madura Bu Yuyun memberikan promo di hari spesial, seperti hari raya dan tahun baru.</p>
+    </details>
+
+    <details>
+        <summary>Bisa pesan lewat WhatsApp?</summary>
+        <p>Warung Madura Bu Yuyun menerima pesanan lewat WhatsApp di halaman kontak.</p>
+    </details>
+
+    <details>
+        <summary>Apakah semua barang selalu tersedia?</summary>
+        <p>Stok diusahakan lengkap, tapi beberapa barang bisa habis sewaktu-waktu.</p>
+    </details>
+
+    <details>
+        <summary>Bisa ngutang ga?</summary>
+        <h2><b>Ga menerima <strong>ngutang!!!!!!!!!!!!!!</strong></h2>
+    </details>
+
+</div>
+    
+<footer>
+    <p>© 2020 Warung Madura Bu Yuyun</p>
+</footer>
+ 
+</body>
+</html>
