@@ -3,6 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Warung Madura Bu Yuyun</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <style>
         body {
@@ -109,12 +110,57 @@
             background-clip: text;
         }
 
-        footer {
-            background-color: #b30000;
-            color: white;
+        .footer {
+            background-color: #f01c1c;
+            padding: 30px 40px 16px;
+            color: #fff;
+        }
+
+        .footer-bung {
+            max-width: 1000px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer-info,
+        .footer-kontak {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .footer h4 {
+            margin-bottom: 8px;
+            font-size: 16px;
+            color: #ffdede;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-kontak a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .footer-kontak i {
+            font-size: 14px;
+        }
+
+        .footer-copy {
             text-align: center;
-            padding: 10px;
-            margin-top: auto;
+            margin-top: 20px;
+            font-size: 12px;
+            opacity: 0.7;
         }
 
         @media (max-width: 768px) {
@@ -132,12 +178,20 @@
                 text-align: center;
                 border-radius: 6px;
             }
-
+          
             nav a:last-child {
                 grid-column: 2 / 3;
                 justify-self: center;
             }
-        }
+            .footer-wrap {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .footer-copy {
+                text-align: center;
+            }
+}
         
     </style>
 </head>
@@ -151,13 +205,9 @@
 
 <nav>
     <a href="index.html" class="active">Beranda</a>
-    <a href="about.html">Tentang Kami</a>
-    <a href="faq.html">FAQ</a>
-    <a href="ketentuan.html">Ketentuan </a>
     <a href="menu.html">Produk</a>
     <a href="foto.html">Images</a>
     <a href="promo.html">Promo</a>
-    <a href="kontak.html">Kontak Lengkap</a>
     <a href="testimoni.html">Testimoni</a>
     <a href="kritik.html">Kritik & Saran</a>
 </nav>
@@ -193,8 +243,35 @@
 
 </div>
 
-<footer>
-    <p>© 2020 Warung Madura Bu yuyun</p>
+<footer class="footer">
+    <div class="footer-bung">
+
+        <div class="footer-info">
+            <h4>Informasi</h4>
+            <a href="about.html">Tentang Kami</a>
+            <a href="faq.html">FAQ</a>
+            <a href="ketentuan.html">Ketentuan</a>
+        </div>
+
+        <div class="footer-kontak">
+            <h4>Kontak</h4>
+
+            <a href="https://wa.me/6281234567890" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
+
+            <a href="https://maps.google.com/?q=Warung+Madura+Bu+Yuyun" target="_blank">
+                <i class="fa-solid fa-location-dot"></i> Google Maps
+            </a>
+
+            <a href="kontak.html">
+                <i class="fa-solid fa-phone"></i> Kontak Lengkap
+            </a>
+        </div>
+
+    </div>
+
+    <p class="footer-copy">© 2020 Warung Madura Bu Yuyun</p>
 </footer>
 
 </body>
