@@ -71,11 +71,17 @@
 
 
         table {
-            margin: 80px auto;
+            margin: 20px auto;
             width: 100%;
             border-collapse: collapse;
             background-color: #FBE4E3;
             overflow-x: auto;
+        }
+
+        .table-bung {
+            width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
         }
 
         th, td {
@@ -146,6 +152,10 @@
             transform: translateY(0);
         }
 
+        details summary {
+            scroll-margin-top: 160px;
+        }
+
         details summary:hover{
             font-weight: bold;
             text-decoration: underline;
@@ -184,7 +194,7 @@
 </nav>
 
 <div class="isi">
-
+<div class="table-bung">
     <table>
         <tr>
             <th>Nama</th>
@@ -242,6 +252,7 @@
             </td>
         </tr>
     </table>
+    </div>
 </div>
 
 <footer>
