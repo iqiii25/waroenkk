@@ -21,6 +21,9 @@
             color: white;
             text-align: center;
             padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
 
         nav {
@@ -30,8 +33,20 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            animation: wok 0.5s ease forwards;
         }
 
+        @keyframes wok {
+            from {
+                opacity: 0;
+                transform: translateY(-40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
         nav a {
             text-decoration: none;
             position: relative;
